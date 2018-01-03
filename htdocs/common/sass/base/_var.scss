@@ -1,0 +1,59 @@
+///*------------------------------------*//
+//    Default
+//*------------------------------------*//
+//$default-font-family: "kozuka-gothic-pr6n", "游ゴシック", '游ゴシック体', YuGothic, "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$default-font-family: "游ゴシック", '游ゴシック体', YuGothic, "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$default-font-color: #000;
+$default-line-height: 1.5;
+$default-bg-color: #fff;
+$default-link-color: #000;
+
+
+
+///*------------------------------------*//
+//    Colors
+//*------------------------------------*//
+$main-color: #abdcd6;
+$accent-color: #eb593c;
+$base-color: #fffcec;
+$font-color: #333;
+$vr-color: #abdcd6;
+
+
+
+///*------------------------------------*//
+//    path
+//*------------------------------------*//
+$img_path:'./htdocs/common/img/';
+
+
+
+
+
+
+
+///*------------------------------------*//
+//     Placeholder selector
+//*------------------------------------*//
+
+//clearfix
+%cf{
+	&:after {
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
+
+
+
+///*------------------------------------*//
+//     Mixin
+//*------------------------------------*//
+
+//メディアクエリ挿入
+@mixin media_query($width:820){
+	@media screen and (max-width: $width+px){
+		@content;
+	}
+}

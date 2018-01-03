@@ -1,0 +1,44 @@
+html{
+	font-size: 62.5%;
+}
+
+body{
+	color: $default-font-color;
+	font-family: $default-font-family;
+	line-height: $default-line-height;
+	background-color: $default-bg-color;
+}
+
+::-moz-selection, ::selection{
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+a{
+	&:link,
+	&:visited,
+	&:active {
+		text-decoration: none;
+	}
+	
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+button,
+input,
+select,
+textarea {
+    color: $default-font-color;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label,
+input[type=submit]{
+    cursor: pointer;
+}

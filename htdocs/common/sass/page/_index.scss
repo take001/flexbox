@@ -1,0 +1,59 @@
+.header,.article,.sidebar,.footer{
+  padding: 1em;
+}
+
+.wrap{
+  font-size: 1.6rem;
+
+  /** ここから下に追記 **/
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header{
+  background-color: #9ab3fe;
+
+  /** ここから下に追記 **/
+
+}
+
+.main{
+  /** ここから下に追記 **/
+
+  display: flex;
+  flex-direction: wrap;
+  flex-grow: 1;
+
+}
+
+//コンテンツは可変
+.article{
+  background-color: #9eddef;
+
+  /** ここから下に追記 **/
+   flex: 1;
+}
+
+//サイドバーは200px固定
+//positionは使用禁止
+.sidebar{
+  width: 200px;
+  background-color: #ff7c76;
+
+  /** ここから下に追記 **/
+
+
+}
+
+//フッターはコンテンツの中身が少なくても、最下部に固定
+//コンテンツが多ければ通常通りスクロール
+//positionもJSも使用禁止
+.footer{
+  background-color: #282c33;
+  color: #fff;
+
+  /** ここから下に追記 **/
+  display: flex;
+}
